@@ -1,0 +1,31 @@
+/* .navContainer {
+  position: relative;
+  height: 70px;
+  background-color: black;
+}
+
+.navImg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+} */
+
+.navContainer {
+  /* width: 100vw; */
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navImg {
+  width: 1180px;
+}
+
+@media (max-width: 1300px) {
+  .navContainer {
+    padding: 0 60px;
+  }
+}

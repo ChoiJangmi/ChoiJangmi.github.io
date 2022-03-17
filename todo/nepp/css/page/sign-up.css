@@ -1,0 +1,12 @@
+.mainContainer {
+  justify-content: center;
+}
+
+.btn-signup {
+  width: 450px;
+  height: 40px;
+}
+
+.signupContainer h3 {
+  text-align: center;
+}
