@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainContainer {
+  margin: 50px auto; 
+  width: 1115px;
+  height: 578px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.subContainer p {
+  font-size: 13px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.inputTel,
+.inputCerti {
+  position: relative;
+}
+
+.certiRequest,
+.certifiTime {
+  margin: 4px;
+  position: absolute;
+  right: 0;
+  width: 90px;
+  height: 32px;
+  font-size: 12px;
+}
+
+.welcome {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .welcomeImg {
+  margin-top: 20px;
+} */
+
+@media (max-width: 1300px) {
+  .mainContainer {
+    flex-wrap: nowrap;
+    margin: 50px 100px;
+  }
+}
