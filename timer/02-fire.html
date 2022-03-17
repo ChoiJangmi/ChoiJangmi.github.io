@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="launchButton">발사</button>
+    <div id="count"></div>
+    <script>
+      const count_out = document.querySelector("#count");
+
+      const launch_count = () => {
+        let i = 5;
+        const count = setInterval(() => (count_out.innerText = i--), 1000);
+        setTimeout(() => {
+          clearInterval(count);
+          alert(`발사 성공`);
+        }, 6000);
+      };
+
+      document
+        .querySelector("#launchButton")
+        .addEventListener("click", launch_count);
+    </script>
+  </body>
+</html>

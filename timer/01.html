@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <button>발사</button>
+    <script>
+      /* 1초마다 "안녕하세요"를 콘솔에 출력
+      setInterval(() => console.log(`안녕하세요`), 1000); */
+
+      /* //1초마다 1씩 증가하는 숫자 출력하기
+      let i = 0;
+      const intervalId = setInterval(() => console.log(++i), 1000); */
+
+      /* //5초뒤에 "5초 뒤" 출력
+      setTimeout(() => console.log("5초 뒤"), 5000); */
+
+      // 5~1초까지 출력 후 "5초 뒤" 출력
+      let i = 5;
+      const intervalId = setInterval(() => console.log(i--), 1000);
+
+      setTimeout(() => {
+        clearInterval(intervalId);
+        console.log("5초 뒤");
+      }, 5000);
+      
+    </script>
+  </body>
+</html>

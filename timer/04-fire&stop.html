@@ -1,0 +1,60 @@
+<!-- 1. 발사버튼을 누르면 5초 타이머 표시 & 5초 뒤alert 
+     2. 멈춰 버튼을 누르면 타이머 초기화 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-fire">발사</button>
+    <button id="btn-stop" disabled>멈춰</button>
+    <p id="message"></p>
+  </body>
+  <script>
+    const $message = document.querySelector("#message");
+    const $btnfire = document.querySelector("#btn-fire");
+    const $btnstop = document.querySelector("#btn-stop");
+
+    let interValId = "";
+    let timeoutId = "";
+
+    const disabledButtonOnFire = (isFire) => {
+      //   if (isFire) {
+      //     $btnfire.disabled = "disabled";
+      //     $btnstop.disabled = "";
+      //   } else {
+      //     $btnfire.disabled = "";
+      //     $btnstop.disabled = "disabled";
+      //   }
+      $btnfire.disabled = isFire ? "disabled" : "";
+      $btnstop.disabled = isFire ? "" : "disabled";
+    };
+
+    $btnfire.addEventListener("click", () => {
+      disabledButtonOnFire(true);
+      let i = 5;
+      $message.innerText = i;
+
+      interValId = setInterval(() => {
+        $message.innerText = --i;
+      }, 1000);
+      
+      timeoutId = setTimeout(() => {
+        clearInterval(interValId);
+        alert(`발사 성공`);
+        disabledButtonOnFire(false);
+      }, 5000);
+    });
+
+    $btnstop.addEventListener("click", () => {
+      // interval, timeout 종료
+      clearInterval(interValId);
+      clearTimeout(timeoutId);
+      disabledButtonOnFire(false);
+    });
+  </script>
+</html>

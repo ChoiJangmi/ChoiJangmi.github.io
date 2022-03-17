@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시계</title>
+  </head>
+  <body>
+    <h2 id="time"></h2>
+    <script>
+      setInterval(() => {
+        const time = new Date();
+        let hour = time.getHours();
+        let minute = time.getMinutes();
+        let second = time.getSeconds();
+
+        const $time = document.querySelector("#time");
+        (hour < 10) ? (hour = `0` + hour) : "";
+        (minute < 10) ? (minute = `0` + minute) : "";
+        (second < 10) ? (second = `0` + second) : "";
+
+        $time.innerText = `${hour}:${minute}:${second}`;
+      }, 1000);
+    </script>
+  </body>
+</html>
