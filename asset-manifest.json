@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.309b7fca.css",
-    "main.js": "/static/js/main.03b6d3ad.js",
+    "main.js": "/static/js/main.11403efb.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile.jpg": "/static/media/profile.7fe14f0accd9979e3303.jpg",
     "static/media/youtubelogo.svg": "/static/media/youtubelogo.e08d4c50a05694d0aef8f3f864898922.svg",
+    "static/media/imgIcon.svg": "/static/media/imgIcon.ac7015e70314fc49b01e4b31968546e7.svg",
     "index.html": "/index.html",
     "static/media/newPost.svg": "/static/media/newPost.c6c267d65b14b7ffd1e5f4eb882e64e8.svg",
     "static/media/login.svg": "/static/media/login.3c0158748069045947269a2a2f8533ad.svg",
@@ -18,6 +19,7 @@
     "static/media/setyoutube.svg": "/static/media/setyoutube.264bafb0ae4539924d2ac173562ede12.svg",
     "static/media/declaration.svg": "/static/media/declaration.886c6e5e2da02f5884a0b9eccaca304f.svg",
     "static/media/readingglasses.svg": "/static/media/readingglasses.ff051359b0a2106a3bac4f53410db14a.svg",
+    "static/media/backspace.svg": "/static/media/backspace.116358b853f643bf860f48824bea6051.svg",
     "static/media/share.svg": "/static/media/share.157ac9a16a6528d4b2cec72419bceda5.svg",
     "static/media/closeX.svg": "/static/media/closeX.07e7ab31afee76c93da85e1d390f2270.svg",
     "static/media/direct.svg": "/static/media/direct.e85ba4f06ba008caa326f7b311cc5c90.svg",
@@ -27,11 +29,11 @@
     "static/media/downVIcon.svg": "/static/media/downVIcon.93ecf8a969d4ad60868681052ac80866.svg",
     "static/media/align.svg": "/static/media/align.ca20cbc2fc93c37c5025134d802602d8.svg",
     "main.309b7fca.css.map": "/static/css/main.309b7fca.css.map",
-    "main.03b6d3ad.js.map": "/static/js/main.03b6d3ad.js.map",
+    "main.11403efb.js.map": "/static/js/main.11403efb.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.309b7fca.css",
-    "static/js/main.03b6d3ad.js"
+    "static/js/main.11403efb.js"
   ]
 }
